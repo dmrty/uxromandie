@@ -1,0 +1,33 @@
+---
+layout: default
+
+---
+  {%- if page.title and page.hide_title != 'true' -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size -%}
+      {%- for post in site.posts -%}
+      
+      <article class="post post--archive">
+      {%- if post.number -%}
+        <h4 class="lap-and-up--mb0 post__number">
+          <span class="post__number-text">Episode</span> {{ post.number }}
+        </h4>
+      {%- endif -%}
+      <h2 class="mb- mt0">
+        <a href="{{post.url | relative_url}}" title="Permalink to {{post.title}}" rel="bookmark">{{post.title}}</a>
+      </h2>
+      {%- if post.speaker -%}
+        <h4 class="text-alt mt0 mb-">Avec {{post.speaker}}</h4>
+      {%- endif -%}
+
+      {%- if post.date -%}
+        <p class="text-muted">{{ post.event_date | date:"%B %Y" }}</p>
+      {%- endif -%}
+    </article>
+      {%- endfor -%}
+  {%- endif -%}
+

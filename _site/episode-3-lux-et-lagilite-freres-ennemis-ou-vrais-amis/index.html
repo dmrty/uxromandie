@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <title>L&rsquo;UX et l&rsquo;agilit&eacute; : Fr&egrave;res ennemis ou vrais amis? - UX Romandie</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+    <link rel="shortcut icon" href="/assets/images/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/images/apple-touch-icon-180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/apple-touch-icon-76.png">
+
+    <!--[if lt IE 9]>
+      <script src="/assets/javascripts/html5.js" type="text/javascript"></script>
+    <![endif]-->
+  <link rel="stylesheet" id="fonts-css" href="http://fonts.googleapis.com/css?family=Dosis%7COpen+Sans%3A400italic%2C700%2C400&amp;ver=4.2.20" type="text/css" media="all">
+  <link rel="stylesheet" href="/assets/main.css"></link>
+  </head>
+
+  <body <?php body_class(); ?>>
+    <?php include 'images/icons.svg'; ?>
+
+    <div class="wrapper">
+      <div class="header-bg"></div>
+
+      <div class="site-layout clearfix">
+        <header class="site-header 3/10 palm-1/1">
+          <button type="button" class="site-header__toggle-btn btn pull-right" data-toggle="collapse" data-target="#header-collapse"><?php _e('Menu') ?></button>
+
+          <a href="/" class="brand"><img src="/assets/images/logo.svg" class="brand__img" alt="UX Romandie"></a>
+
+          <div id="header-collapse" class="site-header__collapse collapse">
+            <p class="site-description text-muted mb0">UX Romandie est maintenant IxDA Lausanne</p>
+            <div class="menu-main-menu-container">
+            <ul class="menu mb+ mt+ lap-and-up-mb++ lap-and-up-mt++ list-bare"><li class="menu-item menu-item-type-post_type menu-item-object-page page_item">
+                  <a  href="/">Accueil</a>
+                </li><li class="menu-item menu-item-type-post_type menu-item-object-page page_item">
+                  <a  href="/evenements.html">Événements</a>
+                </li></ul>
+            </div>
+          </div>
+        </header>
+
+        <div class="site-content 7/10 palm-1/1">
+
+        <article class="post post--defaultpost--has-event"><h4 class="post__number"><span class="post__number-text">Episode </span>3<h4><h2 class="mt0 mb-">
+    <a href="/episode-3-lux-et-lagilite-freres-ennemis-ou-vrais-amis/index.html" title="Permalink to L&rsquo;UX et l&rsquo;agilit&eacute; : Fr&egrave;res ennemis ou vrais amis?" rel="bookmark">L&rsquo;UX et l&rsquo;agilit&eacute; : Fr&egrave;res ennemis ou vrais amis?</a></h2><h4 class="text-alt mt0">
+      avec Sophie Freiermuth
+    </h4><?php $thumbnail = get_the_post_thumbnail($post_id, 'large'); ?>
+  <?php if ($thumbnail): ?>
+    <div class="post__img">
+      <?= $thumbnail ?>
+    </div>
+  <?php endif; ?><div class="post__event-metadata box box--alt mb">
+      <div class="layout"><div class="layout__item 1/3 portable-1/2 palm-1/1">
+            <time datetime="2012-02-21 20:00:00" title="2012-02-21 20 h 00" class="calday flag">
+              <span class="flag__img">
+                <span class="calday__day">21</span>
+                <span class="calday__month">Feb</span>
+              </span>
+              <span class="flag__body">
+                <span class="calday__weekday">Tuesday</span>
+                <span class="calday__relative">2012
+                  <!-- <?php
+                  $event_date = new DateTime;
+                  $event_date->setTimestamp($timestamp);
+                  $today = new DateTime("now");
+                  $interval = $event_date->diff($today)->format('%a');
+                  if ($event_date->format('Y-m-d') == $today->format('Y-m-d')) {
+                    _e('Today', 'template');
+                  }
+                  elseif ($event_date > $today) {
+                    if ($interval == 1) {
+                      _e('Tomorrow', 'template');
+                    }
+                    else {
+                      printf( __('In %d days', 'template'), $interval );
+                    }
+                  }
+                  else {
+                    $interval++; // Why PHP, WHY?
+                    if ($interval == 1) {
+                      _e('Yesterday', 'template');
+                    }
+                    else {
+                      printf( __('%d days ago', 'template'), $interval );
+                    }
+                  }
+                  ?>-->
+                </span>
+                <span class="calday__hour">20 h 00</span>
+              </span>
+            </time>
+          </div><div class="layout__item 1/3 portable-1/2 palm-1/1 palm-mt">
+            <address><a href="http://g.co/maps/up4n2" title="Show map" class="text-muted">
+                  HyperWeek<br />
+rue de la Colline 10<br />
+Genève
+                </a></address>
+          </div><div class="layout__item 1/3 portable-1/1 portable-mt"><p>
+                  <a href="https://www.flickr.com/photos/uxromandie/sets/72157633720328410/" title="View photo gallery" rel="external">
+                    <svg class="icon icon-gallery icon--sr" width="22" height="22">
+                      <use xlink:href="#icon-gallery"></use>
+                    </svg>Photo gallery</a>
+                </p></div></div>
+    </div><div class="post__content">
+    <p>L'eXperience Utilisateur et les m&eacute;thodes agiles sont vus comme des vrais r&eacute;volutions de cette derni&egrave;re d&eacute;cennie dans le monde des nouvelles technologies. Elle partagent d'ailleurs un certains nombre de principes en communs. Mais ces deux mondes ne sont pas facilement int&eacute;grables l'une avec l'autre. A travers un ensemble d'&eacute;tudes de cas, Sophie (@<a href="https://twitter.com/#!/wickedgeekie">wickedgeekie</a>) nous r&eacute;v&eacute;lera ses bonnes pratiques m&eacute;thodologiques, ses techniques de travail, et ses astuces pour une saine int&eacute;gration de l'eXp&eacute;rience Utilisateur dans &eacute;quipe agile. Un grand merci &agrave; @<a href="https://twitter.com/#!/liquidconcept">liquidconcept</a>&nbsp;qui sponsorise la rencontre et &agrave;&nbsp;<a href="https://twitter.com/#!/hyperweek">@hyperweek</a>&nbsp;qui nous accueille chez eux!</p>
+<h3>A propos de Sophie Freiermuth</h3>
+<p>Apr&egrave;s une premi&egrave;re carri&egrave;re dans la vente et le marketing digital, Sophie a &eacute;t&eacute; form&eacute;e au m&eacute;tier de Designer de l&rsquo;Exp&eacute;rience Utilisateur dans une filiale du groupe Thomson-Reuters. Elle s&rsquo;est alors sp&eacute;cialis&eacute;e dans cette discipline au sein de deux agences cr&eacute;atives cit&eacute;es au "NMA 100" pour des clients tels que T-Mobile, Orange, Nike, Nokia, Heineken, Fiat. Elle travaille de mani&egrave;re collaborative afin d&rsquo;int&eacute;grer les principes du design de l&rsquo;exp&eacute;rience utilisateur au c&oelig;ur des m&eacute;tiers qu&rsquo;elle c&ocirc;toie : chef de produit, chef de projet, d&eacute;veloppeur, etc. Elle a travaill&eacute; en agile (scrum) au sein d&rsquo;AKQA, Orange et Nokia et pr&ocirc;ne une incorporation du design au c&oelig;ur du processus de d&eacute;veloppement.</p>
+
+  </div>
+
+  <div class="layout mt+">
+    <div class="layout__item 1/2 portable-1/1">
+      <?php get_template_part('partials/sponsor') ?>
+    </div><div class="layout__item 1/2 portable-1/1 portable-mt">
+      <?php get_template_part('partials/newsletter') ?>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+    
+          <footer class="site-footer">
+            <div class="wrapper">
+              UX Romandie &copy; 2018. All rights reserved.
+            </div>
+          </footer>
+
+        </div><!-- END .site-content -->
+      </div><!-- END .layout -->
+    </div><!-- END .wrapper -->
+
+    <?php wp_footer(); ?>
+  </body>
+</html>
+
+

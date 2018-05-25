@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <title>UX in a time of emerging technologies - UX Romandie</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+    <link rel="shortcut icon" href="/assets/images/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/images/apple-touch-icon-180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/apple-touch-icon-76.png">
+
+    <!--[if lt IE 9]>
+      <script src="/assets/javascripts/html5.js" type="text/javascript"></script>
+    <![endif]-->
+  <link rel="stylesheet" id="fonts-css" href="http://fonts.googleapis.com/css?family=Dosis%7COpen+Sans%3A400italic%2C700%2C400&amp;ver=4.2.20" type="text/css" media="all">
+  <link rel="stylesheet" href="/assets/main.css"></link>
+  </head>
+
+  <body <?php body_class(); ?>>
+    <?php include 'images/icons.svg'; ?>
+
+    <div class="wrapper">
+      <div class="header-bg"></div>
+
+      <div class="site-layout clearfix">
+        <header class="site-header 3/10 palm-1/1">
+          <button type="button" class="site-header__toggle-btn btn pull-right" data-toggle="collapse" data-target="#header-collapse"><?php _e('Menu') ?></button>
+
+          <a href="/" class="brand"><img src="/assets/images/logo.svg" class="brand__img" alt="UX Romandie"></a>
+
+          <div id="header-collapse" class="site-header__collapse collapse">
+            <p class="site-description text-muted mb0">UX Romandie est maintenant IxDA Lausanne</p>
+            <div class="menu-main-menu-container">
+            <ul class="menu mb+ mt+ lap-and-up-mb++ lap-and-up-mt++ list-bare"><li class="menu-item menu-item-type-post_type menu-item-object-page page_item">
+                  <a  href="/">Accueil</a>
+                </li><li class="menu-item menu-item-type-post_type menu-item-object-page page_item">
+                  <a  href="/evenements.html">Événements</a>
+                </li></ul>
+            </div>
+          </div>
+        </header>
+
+        <div class="site-content 7/10 palm-1/1">
+
+        <article class="post post--defaultpost--has-event"><h4 class="post__number"><span class="post__number-text">Episode </span>31<h4><h2 class="mt0 mb-">
+    <a href="/ux-in-a-time-of-emerging-technologies/index.html" title="Permalink to UX in a time of emerging technologies" rel="bookmark">UX in a time of emerging technologies</a></h2><h4 class="text-alt mt0">
+      avec Dirk Knemeyer
+    </h4><?php $thumbnail = get_the_post_thumbnail($post_id, 'large'); ?>
+  <?php if ($thumbnail): ?>
+    <div class="post__img">
+      <?= $thumbnail ?>
+    </div>
+  <?php endif; ?><div class="post__event-metadata box box--alt mb">
+      <div class="layout"><div class="layout__item 1/3 portable-1/2 palm-1/1">
+            <time datetime="2015-10-06 21:00:00" title="2015-10-06 21 h 00" class="calday flag">
+              <span class="flag__img">
+                <span class="calday__day">06</span>
+                <span class="calday__month">Oct</span>
+              </span>
+              <span class="flag__body">
+                <span class="calday__weekday">Tuesday</span>
+                <span class="calday__relative">2015
+                  <!-- <?php
+                  $event_date = new DateTime;
+                  $event_date->setTimestamp($timestamp);
+                  $today = new DateTime("now");
+                  $interval = $event_date->diff($today)->format('%a');
+                  if ($event_date->format('Y-m-d') == $today->format('Y-m-d')) {
+                    _e('Today', 'template');
+                  }
+                  elseif ($event_date > $today) {
+                    if ($interval == 1) {
+                      _e('Tomorrow', 'template');
+                    }
+                    else {
+                      printf( __('In %d days', 'template'), $interval );
+                    }
+                  }
+                  else {
+                    $interval++; // Why PHP, WHY?
+                    if ($interval == 1) {
+                      _e('Yesterday', 'template');
+                    }
+                    else {
+                      printf( __('%d days ago', 'template'), $interval );
+                    }
+                  }
+                  ?>-->
+                </span>
+                <span class="calday__hour">21 h 00</span>
+              </span>
+            </time>
+          </div><div class="layout__item 1/3 portable-1/2 palm-1/1 palm-mt">
+            <address><a href="https://www.google.ch/maps/place/Liip+SA/@46.519291,6.6382426,17z/data=!3m1!4b1!4m2!3m1!1s0x478c2e339695a2e1:0x9cd730b81e05924b" title="Show map" class="text-muted">
+                  Liip Lausanne<br />
+Rue Etraz 4<br />
+CH-1003 Lausanne
+                </a></address>
+          </div><div class="layout__item 1/3 portable-1/1 portable-mt"></div></div>
+    </div><div class="post__content">
+    <p>We&rsquo;re in a period where, each day, we&rsquo;re seeing more and more of what was recently science fiction alive within the reality of our everyday world. Smartphones that resemble Star Trek tricorders. MIT&rsquo;s stealth cheetah robot that looks like it leaped straight from the latest Hollywood blockbuster into our real world. Drones that drop bombs on one continent even while they deliver consumer goods to citizens&rsquo; front doors on the other. <strong>We&rsquo;re getting a glimpse into the future</strong>, and it is one that will shake the foundations of user experience. User experience (UX) as a discipline started in computer hardware and software, was co-opted and accelerated by website design, and is returning to roost in the exploding digital products of today and tomorrow.</p>
+<p>These products differ mightily from the simple and screen-based technologies that was the domain of UX. They synthesize multiple cutting-edge scientific fields. For example, as <strong>the internet of things turns us into the everyday cyborg</strong>, huge industries will form that require deep knowledge of natural biology, synthetic biology, genomics, robotics, and material sciences,&nbsp;Oh, and computer science, which used to be the only crunchy scientific field we needed to worry about at all!</p>
+<p>Where does user experience fit into this picture? That&rsquo;s up to us but, to remain relevant, <strong>we will need to learn, adapt, and grow in ways we never would have imagined when learning about research, interaction design, and javascript.</strong></p>
+<h3>About Dirk Knemeyer</h3>
+<p><strong><a href="http://dirk.knemeyer.com">Dirk</a> is the founder and Chairman of <a href="http://www.goinvo.com">Involution Studios</a></strong>, a user experience agency specializing in designing software for emerging technologies. Under Dirk&rsquo;s leadership, Involution Studios has designed or redesigned major software applications for a client list that includes Apple, Microsoft, Oracle, Shutterfly, PayPal, and the administration of U.S. President Barack Obama.</p>
+<p><strong>Dirk is a futurist</strong> who specializes in the relationship between technology, markets, and human behaviour. He has published more than 100 articles in publications such as Business Week; given more than 50 speeches and presentations, including conference keynotes in Europe and the United States; and has participated on the boards of 15 organizations that include a secondary school, a wellness center, and various design and software organizations. Projects that Dirk led or contributed to have won top honors across every communication medium&mdash;including Webby, Telly and Addy awards&mdash;and a variety of vertical industries.</p>
+
+  </div>
+
+  <div class="layout mt+">
+    <div class="layout__item 1/2 portable-1/1">
+      <?php get_template_part('partials/sponsor') ?>
+    </div><div class="layout__item 1/2 portable-1/1 portable-mt">
+      <?php get_template_part('partials/newsletter') ?>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+    
+          <footer class="site-footer">
+            <div class="wrapper">
+              UX Romandie &copy; 2018. All rights reserved.
+            </div>
+          </footer>
+
+        </div><!-- END .site-content -->
+      </div><!-- END .layout -->
+    </div><!-- END .wrapper -->
+
+    <?php wp_footer(); ?>
+  </body>
+</html>
+
+

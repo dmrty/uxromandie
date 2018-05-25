@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <title>UX BookClub "Content Strategy for Mobile" - UX Romandie</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+    <link rel="shortcut icon" href="/assets/images/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/images/apple-touch-icon-180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/apple-touch-icon-76.png">
+
+    <!--[if lt IE 9]>
+      <script src="/assets/javascripts/html5.js" type="text/javascript"></script>
+    <![endif]-->
+  <link rel="stylesheet" id="fonts-css" href="http://fonts.googleapis.com/css?family=Dosis%7COpen+Sans%3A400italic%2C700%2C400&amp;ver=4.2.20" type="text/css" media="all">
+  <link rel="stylesheet" href="/assets/main.css"></link>
+  </head>
+
+  <body <?php body_class(); ?>>
+    <?php include 'images/icons.svg'; ?>
+
+    <div class="wrapper">
+      <div class="header-bg"></div>
+
+      <div class="site-layout clearfix">
+        <header class="site-header 3/10 palm-1/1">
+          <button type="button" class="site-header__toggle-btn btn pull-right" data-toggle="collapse" data-target="#header-collapse"><?php _e('Menu') ?></button>
+
+          <a href="/" class="brand"><img src="/assets/images/logo.svg" class="brand__img" alt="UX Romandie"></a>
+
+          <div id="header-collapse" class="site-header__collapse collapse">
+            <p class="site-description text-muted mb0">UX Romandie est maintenant IxDA Lausanne</p>
+            <div class="menu-main-menu-container">
+            <ul class="menu mb+ mt+ lap-and-up-mb++ lap-and-up-mt++ list-bare"><li class="menu-item menu-item-type-post_type menu-item-object-page page_item">
+                  <a  href="/">Accueil</a>
+                </li><li class="menu-item menu-item-type-post_type menu-item-object-page page_item">
+                  <a  href="/evenements.html">Événements</a>
+                </li></ul>
+            </div>
+          </div>
+        </header>
+
+        <div class="site-content 7/10 palm-1/1">
+
+        <article class="post post--defaultpost--has-event"><h4 class="post__number"><span class="post__number-text">Episode </span>11<h4><h2 class="mt0 mb-">
+    <a href="/ux-bookclub-content-strategy-for-mobile/index.html" title="Permalink to UX BookClub "Content Strategy for Mobile"" rel="bookmark">UX BookClub "Content Strategy for Mobile"</a></h2><h4 class="text-alt mt0">
+      avec Karen McGrane
+    </h4><?php $thumbnail = get_the_post_thumbnail($post_id, 'large'); ?>
+  <?php if ($thumbnail): ?>
+    <div class="post__img">
+      <?= $thumbnail ?>
+    </div>
+  <?php endif; ?><div class="post__event-metadata box box--alt mb">
+      <div class="layout"><div class="layout__item 1/3 portable-1/2 palm-1/1">
+            <time datetime="2012-12-18 20:00:00" title="2012-12-18 20 h 00" class="calday flag">
+              <span class="flag__img">
+                <span class="calday__day">18</span>
+                <span class="calday__month">Dec</span>
+              </span>
+              <span class="flag__body">
+                <span class="calday__weekday">Tuesday</span>
+                <span class="calday__relative">2012
+                  <!-- <?php
+                  $event_date = new DateTime;
+                  $event_date->setTimestamp($timestamp);
+                  $today = new DateTime("now");
+                  $interval = $event_date->diff($today)->format('%a');
+                  if ($event_date->format('Y-m-d') == $today->format('Y-m-d')) {
+                    _e('Today', 'template');
+                  }
+                  elseif ($event_date > $today) {
+                    if ($interval == 1) {
+                      _e('Tomorrow', 'template');
+                    }
+                    else {
+                      printf( __('In %d days', 'template'), $interval );
+                    }
+                  }
+                  else {
+                    $interval++; // Why PHP, WHY?
+                    if ($interval == 1) {
+                      _e('Yesterday', 'template');
+                    }
+                    else {
+                      printf( __('%d days ago', 'template'), $interval );
+                    }
+                  }
+                  ?>-->
+                </span>
+                <span class="calday__hour">20 h 00</span>
+              </span>
+            </time>
+          </div><div class="layout__item 1/3 portable-1/2 palm-1/1 palm-mt">
+            <address><a href="http://goo.gl/maps/huirl" title="Show map" class="text-muted">
+                  La Muse<br />
+Rue de la Muse 2<br />
+1205 Genève
+                </a></address>
+          </div><div class="layout__item 1/3 portable-1/1 portable-mt"></div></div>
+    </div><div class="post__content">
+    <p>Un UX BookClub est une rencontre autour d'un livre UX pour en commenter son contenu. Chaque participant aura lu le livre pour pouvoir participer &agrave; la discussion. Apr&egrave;s cette discussion, une session de questions/r&eacute;ponses par Skype avec l&rsquo;auteur aura lieu lieu.</p>
+<p>Le livre &eacute;tudi&eacute; le 18 d&eacute;cembre sera "<a href="http://www.abookapart.com/products/content-strategy-for-mobile">Content Strategy for Mobile</a>"&nbsp;de Karen McGrane.</p>
+<h3>About Karen McGrane</h3>
+<blockquote><p>Karen McGrane plays nicely in the content strategy, information architecture, and interaction design sandboxes. She is Managing Partner at&nbsp;<a href="http://bondartscience.com/">Bond Art + Science</a>, a UX consultancy she founded in 2006, and formerly VP and National Lead for User Experience at Razorfish. She&rsquo;s led projects for dozens of clients, including&nbsp;The New York Times,&nbsp;Cond&eacute; Nast, and&nbsp;The Atlantic. She also teaches Design Management in the&nbsp;<a href="http://interactiondesign.sva.edu/">Interaction Design MFA</a>&nbsp;program at the School of Visual Arts.</p></blockquote>
+<p><a href="https://twitter.com/karenmcgrane">@karenmcgrane</a></p>
+<h3>The book</h3>
+<blockquote><p>Karen McGrane will teach you everything you need to get your content onto mobile devices (and more). You&rsquo;ll first gather data to help you make the case for a mobile strategy, then learn how to publish flexibly to multiple channels. Along the way, you'll get valuable advice on adapting your workflow to a world of emerging devices, platforms, screen sizes, and resolutions. And all in the less time than it takes you to fly from New York to Chicago.</p></blockquote>
+
+  </div>
+
+  <div class="layout mt+">
+    <div class="layout__item 1/2 portable-1/1">
+      <?php get_template_part('partials/sponsor') ?>
+    </div><div class="layout__item 1/2 portable-1/1 portable-mt">
+      <?php get_template_part('partials/newsletter') ?>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+    
+          <footer class="site-footer">
+            <div class="wrapper">
+              UX Romandie &copy; 2018. All rights reserved.
+            </div>
+          </footer>
+
+        </div><!-- END .site-content -->
+      </div><!-- END .layout -->
+    </div><!-- END .wrapper -->
+
+    <?php wp_footer(); ?>
+  </body>
+</html>
+
+

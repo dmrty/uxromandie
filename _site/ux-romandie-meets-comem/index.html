@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <title>UX Romandie meets COMEM+ - UX Romandie</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+    <link rel="shortcut icon" href="/assets/images/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/images/apple-touch-icon-180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/apple-touch-icon-76.png">
+
+    <!--[if lt IE 9]>
+      <script src="/assets/javascripts/html5.js" type="text/javascript"></script>
+    <![endif]-->
+  <link rel="stylesheet" id="fonts-css" href="http://fonts.googleapis.com/css?family=Dosis%7COpen+Sans%3A400italic%2C700%2C400&amp;ver=4.2.20" type="text/css" media="all">
+  <link rel="stylesheet" href="/assets/main.css"></link>
+  </head>
+
+  <body <?php body_class(); ?>>
+    <?php include 'images/icons.svg'; ?>
+
+    <div class="wrapper">
+      <div class="header-bg"></div>
+
+      <div class="site-layout clearfix">
+        <header class="site-header 3/10 palm-1/1">
+          <button type="button" class="site-header__toggle-btn btn pull-right" data-toggle="collapse" data-target="#header-collapse"><?php _e('Menu') ?></button>
+
+          <a href="/" class="brand"><img src="/assets/images/logo.svg" class="brand__img" alt="UX Romandie"></a>
+
+          <div id="header-collapse" class="site-header__collapse collapse">
+            <p class="site-description text-muted mb0">UX Romandie est maintenant IxDA Lausanne</p>
+            <div class="menu-main-menu-container">
+            <ul class="menu mb+ mt+ lap-and-up-mb++ lap-and-up-mt++ list-bare"><li class="menu-item menu-item-type-post_type menu-item-object-page page_item">
+                  <a  href="/">Accueil</a>
+                </li><li class="menu-item menu-item-type-post_type menu-item-object-page page_item">
+                  <a  href="/evenements.html">Événements</a>
+                </li></ul>
+            </div>
+          </div>
+        </header>
+
+        <div class="site-content 7/10 palm-1/1">
+
+        <article class="post post--defaultpost--has-event"><h4 class="post__number"><span class="post__number-text">Episode </span>13<h4><h2 class="mt0 mb-">
+    <a href="/ux-romandie-meets-comem/index.html" title="Permalink to UX Romandie meets COMEM+" rel="bookmark">UX Romandie meets COMEM+</a></h2><h4 class="text-alt mt0">
+      avec Ian Fenn, Memi Beltrame, Pierre Spring, Simon Farine, Sophie Freiermuth, Tanya Wüthrich et Valérie Vuillerat
+    </h4><?php $thumbnail = get_the_post_thumbnail($post_id, 'large'); ?>
+  <?php if ($thumbnail): ?>
+    <div class="post__img">
+      <?= $thumbnail ?>
+    </div>
+  <?php endif; ?><div class="post__event-metadata box box--alt mb">
+      <div class="layout"><div class="layout__item 1/3 portable-1/2 palm-1/1">
+            <time datetime="2013-02-26 16:30:00" title="2013-02-26 16 h 30" class="calday flag">
+              <span class="flag__img">
+                <span class="calday__day">26</span>
+                <span class="calday__month">Feb</span>
+              </span>
+              <span class="flag__body">
+                <span class="calday__weekday">Tuesday</span>
+                <span class="calday__relative">2013
+                  <!-- <?php
+                  $event_date = new DateTime;
+                  $event_date->setTimestamp($timestamp);
+                  $today = new DateTime("now");
+                  $interval = $event_date->diff($today)->format('%a');
+                  if ($event_date->format('Y-m-d') == $today->format('Y-m-d')) {
+                    _e('Today', 'template');
+                  }
+                  elseif ($event_date > $today) {
+                    if ($interval == 1) {
+                      _e('Tomorrow', 'template');
+                    }
+                    else {
+                      printf( __('In %d days', 'template'), $interval );
+                    }
+                  }
+                  else {
+                    $interval++; // Why PHP, WHY?
+                    if ($interval == 1) {
+                      _e('Yesterday', 'template');
+                    }
+                    else {
+                      printf( __('%d days ago', 'template'), $interval );
+                    }
+                  }
+                  ?>-->
+                </span>
+                <span class="calday__hour">16 h 30</span>
+              </span>
+            </time>
+          </div><div class="layout__item 1/3 portable-1/2 palm-1/1 palm-mt">
+            <address><a href="http://www.heig-vd.ch/contact" title="Show map" class="text-muted">
+                  HEIG-VD<br />
+Aula - Route de Cheseaux 1<br />
+1401 Yverdon-les-Bains
+                </a></address>
+          </div><div class="layout__item 1/3 portable-1/1 portable-mt"></div></div>
+    </div><div class="post__content">
+    <p>Le d&eacute;partement <a href="http://www.comem.ch/">COMEM+</a> de la HEIG-VD s&rsquo;associe &agrave; UX Romandie pour vous proposer un &eacute;v&eacute;nement centr&eacute; sur l&rsquo;exp&eacute;rience utilisateur et l&rsquo;ergonomie web. 5 workshops (en parall&egrave;le) et une conf&eacute;rence vous sont propos&eacute;s. Vous trouverez ci-dessous le programme, la liste des workshops, des infos sur la conf&eacute;rence et le formulaire d'inscription.</p>
+<h3>Programme</h3>
+<ul>
+<li>15h30 Ouverture des portes</li>
+<li>16h00 Workshops</li>
+<li>18h15 Short talks ex-&eacute;tudiants COMEM+</li>
+<li>18h45 Pause collation/ap&eacute;ro</li>
+<li>19h45 Conf&eacute;rence "People, not process: The craft of being heard" Ian Fenn</li>
+<li>21h15 Fin conf&eacute;rence suivi d&rsquo;un ap&eacute;ro de r&eacute;seautage</li>
+</ul>
+<h3>Workshops</h3>
+<h4>Prototyping for Mobile (english)</h4>
+<p><em>Memi Beltrame (@<a href="https://twitter.com/bratwurstkomet">bratwurstkomet</a>)</em></p>
+<p>This session looks at the challenges we are facing when prototyping for mobile and gives an overview about the tools and handy helpers that you can use to deliver tappable, sharable and testable prototypes.</p>
+<h4>Les d&eacute;livrables: comment moduler leur format pour am&eacute;liorer leur utilisation</h4>
+<p><em>Sophie Freiermuth (@<a href="https://twitter.com/wickedgeekie">wickedgeekie</a>)</em></p>
+<p>Malgr&eacute; la conviction de certains que toute documentation est superflue, et seul le produit final sous forme de code et de produit livr&eacute; compte, dans le cadre du d&eacute;veloppement technique de projets digitaux (sites internet, applications mobiles, interfaces type kiosque, etc), la documentation est essentielle pour beaucoup de partenaires car elle leur permet une vision anticip&eacute;e de la d&eacute;marche et du r&eacute;sultat. Les sp&eacute;cialistes de l'exp&eacute;rience utilisateur utilisent une gamme de r&eacute;solutions pour leurs d&eacute;livrables, du croquis &agrave; la documentation de haute-fid&eacute;lit&eacute;, afin d'appliquer toujours le degr&eacute; de d&eacute;tail n&eacute;cessaire. Dans cet atelier, nous parcourrons cette gamme afin de comprendre comment un simple croquis sur un coin de feuiller peut s'av&eacute;rer &ecirc;tre une forme plus efficace de documentation que 120 pages de sp&eacute;cifications techniques. Cet atelier sera pratique, et vous mettra en jeu afin de vous permettre d'appr&eacute;cier l'effort comme le r&eacute;sultat, et de vous aider dans vos projets futurs.</p>
+<h4>Responsive Design</h4>
+<p><em>Pierre Spring (@<a href="https://twitter.com/shvi">shvi</a>)</em></p>
+<p>Vous avez s&ucirc;rement d&eacute;j&agrave; entendu parler de responsive design. Ce que vous ne savez pas est l'extr&ecirc;me facilit&eacute; avec laquelle vous pouvez rendre votre site web responsive. Dans ce workshop nous traiterons bri&egrave;vement la th&eacute;orie du responsive design et puis on jouera avec. Nous ferons un petit site web responsive et une application web responsive.</p>
+<h4>UX Design Principles (english)</h4>
+<p><em>Tanya W&uuml;thrich (@<a href="https://twitter.com/zwitscherlise">zwitscherlise</a>) et Val&eacute;rie Vuillerat (@<a href="https://twitter.com/valeriewow">valeriewow</a>)</em></p>
+<p>There are three responses to a piece of design&ndash; yes, no, and WOW! Wow is the one to aim for. Milton Glaser (Designer)</p>
+<p>Interaction design is a multi-&shy;faceted discipline that links static communications together to form an experience. Understanding the basic UX design principles is core to designing websites that are not only aesthetically pleasing but that actually solve business problems and bring delight to their users.</p>
+<p>Anyone designing web-&shy;based projects today requires a basic understanding of interaction design principles. In our workshop we offer some insight into the most important principles in designing a great experience.</p>
+<h4>Rentrer dans la t&ecirc;te de vos utilisateurs gr&acirc;ce aux statistiques de fr&eacute;quentation</h4>
+<p><em>Simon Farine (@<a href="https://twitter.com/simon_bricolo">simon_bricolo</a>)</em></p>
+<p>Mat&eacute;riel conseill&eacute;: un ordinateur et un acc&egrave;s &agrave; un compte Google Analytics</p>
+<p>Google Analytics, l'outil de statistiques de fr&eacute;quentation le plus populaire, peut &ecirc;tre d&eacute;courageant avec son interface touffue et la quantit&eacute; de donn&eacute;es et d'options disponibles. Simon Farine montrera comment se focaliser sur quelques indicateurs bien pr&eacute;cis pour mieux comprendre les besoins des utilisateurs de votre site internet.</p>
+<h4>Infos conf&eacute;rence</h4>
+<p><em>Ian Fenn (Chopstix Media) (@<a href="https://twitter.com/ifenn">ifenn</a>)</em></p>
+<p>"People, not process: The craft of being heard"</p>
+<p>Ever had the feeling you&rsquo;re pounding the closed door of common sense? Have you been left crestfallen after stakeholders over-ruled your thoughtful and heavily researched recommendations? Drawing on his 16 years of design experience and the latest research, Ian will spend this session revealing the key secrets to being heard.</p>
+<p>If you follow his advice, your designs will never be the same again.</p>
+
+  </div>
+
+  <div class="layout mt+">
+    <div class="layout__item 1/2 portable-1/1">
+      <?php get_template_part('partials/sponsor') ?>
+    </div><div class="layout__item 1/2 portable-1/1 portable-mt">
+      <?php get_template_part('partials/newsletter') ?>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+    
+          <footer class="site-footer">
+            <div class="wrapper">
+              UX Romandie &copy; 2018. All rights reserved.
+            </div>
+          </footer>
+
+        </div><!-- END .site-content -->
+      </div><!-- END .layout -->
+    </div><!-- END .wrapper -->
+
+    <?php wp_footer(); ?>
+  </body>
+</html>
+
+

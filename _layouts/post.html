@@ -1,0 +1,131 @@
+---
+layout: default
+---
+<article class="post post--default{%- if page.event_date or page.adresse or page.inscription -%} post--has-event{%- endif -%}">
+  {%- if page.number -%} 
+  <h4 class="post__number"><span class="post__number-text">Episode </span>{{page.number}}<h4>
+  {%- endif -%}
+  <h2 class="mt0 mb-">
+    <a href="{{page.url | relative_url }}" title="Permalink to {{page.title  }}" rel="bookmark">{{page.title }}</a></h2>
+    {%- if page.speaker -%} 
+    <h4 class="text-alt mt0">
+      avec {{ page.speaker }}
+    </h4>
+  {%- endif -%}
+
+  <?php $thumbnail = get_the_post_thumbnail($post_id, 'large'); ?>
+  <?php if ($thumbnail): ?>
+    <div class="post__img">
+      <?= $thumbnail ?>
+    </div>
+  <?php endif; ?>
+
+  {%- if page.event_date or page.adresse or page.inscription -%}
+    <div class="post__event-metadata box box--alt mb">
+      <div class="layout">
+        {%- if page.event_date or false -%}
+          <div class="layout__item 1/3 portable-1/2 palm-1/1">
+            <time datetime="{{page.event_date| date:'%Y-%m-%d %H:%M:%S'}}" title="{{page.event_date| date:'%Y-%m-%d %H h %M'}}" class="calday flag">
+              <span class="flag__img">
+                <span class="calday__day">{{page.event_date| date:'%d'}}</span>
+                <span class="calday__month">{{page.event_date| date:'%b'}}</span>
+              </span>
+              <span class="flag__body">
+                <span class="calday__weekday">{{page.event_date| date:'%A'}}</span>
+                <span class="calday__relative">{{page.event_date| date:'%Y'}}
+                  <!-- <?php
+                  $event_date = new DateTime;
+                  $event_date->setTimestamp($timestamp);
+                  $today = new DateTime("now");
+                  $interval = $event_date->diff($today)->format('%a');
+                  if ($event_date->format('Y-m-d') == $today->format('Y-m-d')) {
+                    _e('Today', 'template');
+                  }
+                  elseif ($event_date > $today) {
+                    if ($interval == 1) {
+                      _e('Tomorrow', 'template');
+                    }
+                    else {
+                      printf( __('In %d days', 'template'), $interval );
+                    }
+                  }
+                  else {
+                    $interval++; // Why PHP, WHY?
+                    if ($interval == 1) {
+                      _e('Yesterday', 'template');
+                    }
+                    else {
+                      printf( __('%d days ago', 'template'), $interval );
+                    }
+                  }
+                  ?>-->
+                </span>
+                <span class="calday__hour">{{page.event_date | date: "%H h %M"}}</span>
+              </span>
+            </time>
+          </div>
+        {%- endif -%}
+        {%- if page.adresse -%}
+          <div class="layout__item 1/3 portable-1/2 palm-1/1 palm-mt">
+            <address>
+              {%- if page.adresse-gmaps -%}
+                <a href="{{ page.adresse-gmaps }}" title="Show map" class="text-muted">
+                  {{ page.adresse | newline_to_br }}
+                </a>
+              {%- else -%}
+                {{ page.adresse | newline_to_br}}
+              {%- endif -%}
+            </address>
+          </div>
+        {%- endif -%}
+        {%- if page.inscription or page.photo-gallery or page.slides -%}
+          <div class="layout__item 1/3 portable-1/1 portable-mt">
+            {%- if false -%} {# if page.event_date > site.time #}
+              <p class="mb-"><a href="{{page.inscription}}" class="btn btn--full btn--small">Register</a></p>
+              {%- if page.google_form_inscription-%}          
+                <p class="text-muted text-small text-center mt0"> or 
+                  <a href="{{ page.google_form_inscription}}">register without Twitter</a>
+                </p>
+              {%- endif -%}
+                  
+            {%- else -%}
+              {%- if page.photo-gallery -%}
+                <p>
+                  <a href="{{page.photo-gallery}}" title="View photo gallery" rel="external">
+                    <svg class="icon icon-gallery icon--sr" width="22" height="22">
+                      <use xlink:href="#icon-gallery"></use>
+                    </svg>Photo gallery</a>
+                </p>
+              {%- endif -%}
+              {%- if page.slides -%}
+                <p>
+                  <a href="{{page.slides}}" title="View slides" rel="external">
+                    <svg class="icon icon-slides icon--sr" width="22" height="22">
+                      <use xlink:href="#icon-slides"></use>
+                    </svg>Slides
+                  </a>
+                </p>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="post__content">
+    {{ content }}
+  </div>
+
+  <div class="layout mt+">
+    <div class="layout__item 1/2 portable-1/1">
+      <?php get_template_part('partials/sponsor') ?>
+    </div><div class="layout__item 1/2 portable-1/1 portable-mt">
+      <?php get_template_part('partials/newsletter') ?>
+    </div>
+  </div>
+</article>
+
+
+
+

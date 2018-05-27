@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="post post--default{%- if page.event_date or page.adresse or page.inscription -%} post--has-event{%- endif -%}">
+<article class="post post--default {% if page.event_date or page.adresse or page.inscription %} post--has-event{% endif %}">
   {%- if page.number -%} 
   <h4 class="post__number"><span class="post__number-text">Episode </span>{{page.number}}<h4>
   {%- endif -%}
@@ -13,12 +13,11 @@ layout: default
     </h4>
   {%- endif -%}
 
-  <?php $thumbnail = get_the_post_thumbnail($post_id, 'large'); ?>
-  <?php if ($thumbnail): ?>
+  {%- if page.image -%}
     <div class="post__img">
-      <?= $thumbnail ?>
+      <img class="attachment-large wp-post-image" src="{{page.image}}"> 
     </div>
-  <?php endif; ?>
+  {%- endif -%}
 
   {%- if page.event_date or page.adresse or page.inscription -%}
     <div class="post__event-metadata box box--alt mb">
